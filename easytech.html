@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Software</title>
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #007acc;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Seções */
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about, .services, .team, .contact {
+    background: #f4f4f4;
+    padding: 2rem 0;
+}
+
+.service-items, .team-members {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item, .team-member {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    padding: 0.7rem 2rem;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #005fa3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com o nome da empresa e menu -->
+    <header>
+        <div class="container">
+            <h1>SoftwareTech</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Nós -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Na SoftwareTech, desenvolvemos soluções inovadoras para impulsionar o seu negócio. Com uma equipe dedicada, oferecemos serviços de desenvolvimento, consultoria e suporte técnico.</p>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Construção de sites e aplicações web sob medida.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Aplicativos Mobile</h3>
+                    <p>Desenvolvimento de aplicativos para Android e iOS.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Consultoria de TI</h3>
+                    <p>Soluções personalizadas para otimizar o uso de tecnologia em seu negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Equipe -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Nosso Time</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <h3>João Silva</h3>
+                    <p>CEO & Fundador</p>
+                </div>
+                <div class="team-member">
+                    <h3>Maria Oliveira</h3>
+                    <p>Desenvolvedora Full-Stack</p>
+                </div>
+                <div class="team-member">
+                    <h3>Lucas Pereira</h3>
+                    <p>Especialista em UX/UI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SoftwareTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
